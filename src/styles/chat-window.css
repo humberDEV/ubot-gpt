@@ -1,0 +1,9 @@
+.chat-frame {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  background-color: #1e1e1e;
+  border-radius: 2dvb;
+  padding: 3dvb;
+  margin: 0dvb 3dvb;
+}

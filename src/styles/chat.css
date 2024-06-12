@@ -1,0 +1,41 @@
+.chat {
+  padding: 1dvb;
+}
+
+.user-pic {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 4dvb;
+  height: 4dvb;
+  border-radius: 50%;
+  background-color: #2d2d2d;
+}
+
+.user-pic.me {
+  margin-left: auto;
+  margin-right: 1dvb;
+  background-color: #4a4a4a;
+  color: #fff;
+}
+
+.user-pic.bot {
+  background-color: #4a4a4a;
+  color: #fff;
+}
+
+.message {
+  padding: 1dvb 2dvb;
+  margin: 1dvb 0dvb;
+  background-color: #2d2d2d;
+  border-radius: 2dvb;
+}
+
+.message.me {
+  color: #fff;
+  background-color: #4a4a4a;
+}
+
+.message.bot {
+  width: max-content;
+}

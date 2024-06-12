@@ -1,0 +1,28 @@
+#root {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  flex-direction: column;
+}
+
+.app-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 0dvb 3dvb;
+}
+
+.app-title {
+  font-size: 4vh;
+}
+
+.credits {
+  font-size: 1.4vh;
+  color: rgba(255, 255, 255, 0.87);
+  margin: 1dvb;
+  text-align: right;
+}
