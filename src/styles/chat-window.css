@@ -2,8 +2,68 @@
   display: flex;
   flex-direction: column;
   flex: 1;
-  background-color: #1e1e1e;
-  border-radius: 2dvb;
+  background-color: var(--secondary-color);
+  border-radius: 10px;
   padding: 3dvb;
-  margin: 0dvb 3dvb;
+  margin: 0 3dvb;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.write-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5dvb 0.5dvb;
+  border-radius: 10px;
+  margin: 0 3dvb;
+}
+
+.write-bar-input {
+  flex: 1;
+  padding: 1.5dvb;
+  border: none;
+  border-radius: 10px;
+  outline: none;
+  resize: vertical;
+  background-color: var(--secondary-color);
+  font-size: 1.5dvh;
+  color: var(--white);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.write-bar-button {
+  margin-left: 1dvb;
+  padding: 1.5dvb;
+  font-size: 1.5dvh;
+  border: none;
+  border-radius: 10px;
+  background-color: var(--send-button-color);
+  color: var(--white);
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.write-bar-button:hover {
+  background-color: var(--primary-color);
+}
+
+.write-bar-button:active {
+  background-color: var(--active-gray);
+}
+
+.write-bar-button:disabled {
+  background-color: var(--gray);
+  cursor: not-allowed;
+}
+
+@media screen and (max-width: 768px) {
+  .chat-frame {
+    margin: 1dvb;
+  }
+
+  .write-bar {
+    margin: 0 1dvb;
+    padding: 0.5dvb 0dvb 2dvb 0dvb;
+  }
 }

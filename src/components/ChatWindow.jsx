@@ -15,12 +15,8 @@ export default function ChatWindow() {
         <Chat user="bot" message="Hi, I'm fine, thanks!" />
       </div>
       <div className="write-bar">
-        <input
-          type="text"
-          placeholder="Write a message..."
-          className="write-bar-input"
-        />
-        <button className="write-bar-button">Send</button>
+        <input placeholder="Write a message..." className="write-bar-input" />
+        <button className="write-bar-button"> {">"} </button>
       </div>
     </>
   );

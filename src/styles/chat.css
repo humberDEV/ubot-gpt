@@ -1,3 +1,4 @@
+/* chat.css */
 .chat {
   padding: 1dvb;
 }
@@ -9,33 +10,38 @@
   width: 4dvb;
   height: 4dvb;
   border-radius: 50%;
-  background-color: #2d2d2d;
+  background-color: var(--gray);
 }
 
 .user-pic.me {
   margin-left: auto;
   margin-right: 1dvb;
-  background-color: #4a4a4a;
-  color: #fff;
+  font-size: 1.3dvb;
+  background-color: var(--primary-color);
+  color: var(--white);
 }
 
 .user-pic.bot {
-  background-color: #4a4a4a;
-  color: #fff;
+  background-color: var(--secondary-color);
+  color: var(--white);
 }
 
 .message {
   padding: 1dvb 2dvb;
-  margin: 1dvb 0dvb;
-  background-color: #2d2d2d;
-  border-radius: 2dvb;
+  margin: 1dvb 0;
+  border-radius: 10px;
 }
 
 .message.me {
-  color: #fff;
-  background-color: #4a4a4a;
+  color: var(--white);
+  background-color: var(--primary-color);
+  max-width: 75%;
+  margin-left: auto;
+  align-self: flex-end;
 }
 
 .message.bot {
-  width: max-content;
+  color: var(--white);
+  background-color: var(--secondary-color);
+  align-self: flex-start;
 }
