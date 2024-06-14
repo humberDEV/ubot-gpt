@@ -11,12 +11,17 @@
 
 .write-bar {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1.5dvb 0.5dvb;
-  border-radius: 10px;
   margin: 0 3dvb;
+  padding: 1dvb 0dvb 2dvb 0dvb;
+}
+
+.input-container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  border-radius: 10px;
+  background-color: var(--secondary-color);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .write-bar-input {
@@ -34,27 +39,15 @@
 
 .write-bar-button {
   margin-left: 1dvb;
-  padding: 1.5dvb;
+  padding: 1dvb;
+  margin: 0.5dvb;
   font-size: 1.5dvh;
   border: none;
   border-radius: 10px;
-  background-color: var(--send-button-color);
-  color: var(--white);
+  background-color: var(--white);
+  color: var(--primary-color);
   cursor: pointer;
   transition: background-color 0.3s;
-}
-
-.write-bar-button:hover {
-  background-color: var(--primary-color);
-}
-
-.write-bar-button:active {
-  background-color: var(--active-gray);
-}
-
-.write-bar-button:disabled {
-  background-color: var(--gray);
-  cursor: not-allowed;
 }
 
 @media screen and (max-width: 768px) {
